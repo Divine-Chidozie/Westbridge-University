@@ -1,0 +1,143 @@
+@media screen and (max-width: 900px) {
+  /* General page width */
+  html,
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+
+  /* Hide desktop navbar links */
+  .header-navbar-component {
+    display: none !important;
+  }
+
+  /* Hide Register button */
+  /* .header-register-btn {
+    display: none !important;
+  } */
+
+  /* Hero container responsiveness */
+  .hero-container-img {
+    position: relative;
+  }
+
+  .hero-container {
+    position: absolute;
+    top: 60%; /* Adjust hero text lower for mobile */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+  .latest-news-and-event {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .undergraduate-admission-container,
+  .university-library-expension,
+  .student-innovation-workshop {
+    width: 100%;
+  }
+  .call-to-action-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cta-first-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .cta-btn-container {
+    display: block !important;
+    margin-top: 10px;
+    margin-left: 200px !important;
+    gap: 5px;
+  }
+  .apply-btn,
+  .request-btn {
+    margin: 0 auto !important;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+  }
+}
+
+/* Laptop and below (72rem) */
+
+/* Tablet and below (43rem) */
+/* @media screen and (max-width: 43rem) {
+  body {
+    background-color: red;
+    color: whitesmoke;
+  }
+} */
+
+@media screen and (max-width: 767px) {
+  .atest-container {
+    width: 100%;
+  }
+  .latest-at-westbridge-container {
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 5px !important;
+  }
+}
+
+/* Phone and below (34rem) */
+@media screen and (max-width: 34rem) {
+  .header-register-btn {
+    display: none;
+  }
+  .select {
+    display: block;
+  }
+  .hero-container-img {
+    position: relative !important;
+  }
+  .hero-container {
+    position: absolute !important;
+    top: 470px !important;
+  }
+  .Featured-programmes-container {
+    margin-top: 220px !important;
+
+    padding-bottom: 10px !important;
+  }
+  .card-image {
+    width: 100% !important;
+  }
+  .latest-at-westbridge-container {
+    padding: 5px !important;
+  }
+  .cta-section {
+    width: 100% !important;
+  }
+  .cta-para {
+    text-align: center !important;
+    font-size: 15px !important;
+  }
+  .cta-image {
+    width: 100% !important;
+  }
+  .cta-btn-container {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    margin: 0 auto !important;
+    margin-top: 10px !important;
+  }
+}

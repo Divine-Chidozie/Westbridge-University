@@ -1,0 +1,11 @@
+{
+  "name": "westbridge-university",
+  "version": "1.0.0",
+  "description": "westbridge project",
+  "main": "index.js",
+  "scripts": {
+    "test": "text"
+  },
+  "author": "",
+  "license": "ISC"
+}

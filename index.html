@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/mediaquery.css" />
+    <title>Westbridge University</title>
+  </head>
+  <body>
+    <!-- ===== Navbar(Header) ===== -->
+    <div class="">
+      <header class="container-fluid">
+        <nav
+          class="d-flex justify-content-between align-items-center mt-4 navbar navbar-expand-lg me-auto ms-auto"
+          style="margin-bottom: 70px"
+        >
+          <span
+            class="fw-bold fs-5 navbar-brand"
+            style="text-decoration: underline; text-underline-offset: 10px"
+            >Westbridge
+            <span class="university text-warning">/ University</span>
+          </span>
+
+          <ul
+            class="d-inline-flex gap-4 nav nav-underline header-navbar-component"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="top-nav-bar nav-link text-black-50" href="">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="top-nav-bar nav-link text-black-50" href="">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="top-nav-bar nav-link text-black-50" href=""
+                >Admission</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="top-nav-bar nav-link text-black-50" href="">Faculty</a>
+            </li>
+            <li class="nav-item">
+              <a class="top-nav-bar nav-link text-black-50" href="">Contact</a>
+            </li>
+          </ul>
+
+          <select id="select" class="select" onchange="navigatePage()">
+            <option value="" id="open">Open</option>
+            <option value="home">Home</option>
+            <option value="about">About</option>
+            <option value="courses">Courses</option>
+            <option value="admission">Admission</option>
+            <option value="faculty">Faculty</option>
+            <option value="contact">Contact</option>
+            <a
+              href=""
+              id="register-btn"
+              class="btn text-white header-register-btn"
+              style="background-color: #0a1f29"
+              >Register</a
+            >
+          </select>
+
+          <a
+            href=""
+            id="register-btn"
+            class="btn text-white header-register-btn"
+            style="background-color: #0a1f29"
+            >Register</a
+          >
+        </nav>
+      </header>
+
+      <main>
+        <!-- ===== Hero Section ===== -->
+        <section>
+          <div>
+            <div class="hero-container-img position-relative">
+              <img
+                src="images/westbridge-banner-image.jpg"
+                alt="Westbridge Home Image"
+                class="img-fluid w-100"
+              />
+            </div>
+            <div
+              class="hero-container position-absolute top-100 start-50 translate-end text-start bg-body-tertiary p-4"
+            >
+              <h1 class="hero-heading">Welcome to Westbridge University</h1>
+              <p class="fs-5">Empowering Education for a Brighter Future</p>
+              <a
+                href=""
+                id="apply-btn"
+                class="btn text-white"
+                style="background-color: #0a1f29"
+                >Apply Now</a
+              >
+            </div>
+          </div>
+        </section>
+        <!-- ===== Featured Programmes Section -->
+        <section class="container my-5 Featured-programmes-container">
+          <h2 class="mb-4 fs-2 fw-bold text-dark">Find Your Future</h2>
+          <!-- card one -->
+          <div class="row g-4">
+            <div
+              class="col-md-4 text-center border border-2 border-white shadow-lg p-3"
+            >
+              <img
+                src="images/computer-science.jpg"
+                alt="computer science"
+                style="width: 250px"
+                class="img-fluid mb-3 card-image"
+              />
+              <h3 class="fs-6 mb-0">BSc Computer Science</h3>
+              <p style="font-size: 14px; margin-bottom: 0">Undergraduate</p>
+              <p style="font-size: 14px; margin-bottom: 10px">
+                Computer Science
+              </p>
+              <p style="font-size: 14px">
+                <!-- <span class="fw-semibold">Description:</span> -->
+                Learn the foundations of programming, software development, and
+                modern technology systems
+              </p>
+            </div>
+
+            <!-- card two -->
+            <div
+              class="col-md-4 text-center border border-2 border-white shadow-lg p-3"
+            >
+              <img
+                src="images/Business-Administration.jpg"
+                alt="business administration"
+                style="width: 250px"
+                class="img-fluid mb-3 card-image"
+              />
+              <h3 class="fs-6 mb-0">MSc Business Administration</h3>
+              <p style="font-size: 14px; margin-bottom: 0">Postgraduate</p>
+              <p style="font-size: 14px; margin-bottom: 10px">
+                MSc Business Administration
+              </p>
+              <p style="font-size: 14px">
+                <!-- <span class="fw-semibold">Description:</span> -->
+                Develop strong management, leadership, and enterpreneurship
+                skills for today's global business world
+              </p>
+            </div>
+
+            <!-- card three -->
+            <div
+              class="col-md-4 text-center border border-2 border-white shadow-lg p-3"
+            >
+              <img
+                src="images/nursing.jpg"
+                alt="nursing"
+                style="width: 250px"
+                class="img-fluid mb-3 card-image"
+              />
+              <h3 class="fs-6 mb-0">BSc Nursing</h3>
+              <p style="font-size: 14px; margin-bottom: 0">Undergraduate</p>
+              <p style="font-size: 14px; margin-bottom: 10px">BSc Nursing</p>
+              <p style="font-size: 14px">
+                <!-- <span class="fw-semibold">Description:</span> -->
+                Gain hands-on clinical experience and learn the essential skills
+                needed to provide quality healthcare
+              </p>
+            </div>
+          </div>
+          <div class="text-center mt-4">
+            <button
+              onclick="handleCourse()"
+              type="button"
+              class="btn text-white"
+              style="background-color: #0a1f29"
+            >
+              Search Our Courses
+            </button>
+          </div>
+        </section>
+
+        <!-- ===== News / Event Section ===== -->
+        <section class="container my-5">
+          <div class="text-white p-4 rounded" style="background-color: #0a1f29">
+            <h2 class="mb-4">Latest News & Events</h2>
+
+            <div class="row g-4 latest-news-and-event">
+              <!-- News 1 -->
+              <div class="col-md-4 undergraduate-admission-container">
+                <img
+                  src="images/students in classroom.jpg"
+                  alt="students in classroom"
+                  style="height: 220px; object-fit: cover"
+                  class="img-fluid w-100"
+                />
+                <h3 class="mt-4 fs-4 w-75">
+                  2025 Undergraduate Admission Opens
+                </h3>
+                <p>Applications are now open for the 2025 academic session</p>
+                <p>March 21, 2025</p>
+                <a id="read-more-one" class="text-warning" href="#"
+                  >Read More →</a
+                >
+              </div>
+
+              <!-- News 2 -->
+              <div class="col-md-4 university-library-expension">
+                <img
+                  src="images/university library exterior.jpg"
+                  alt="university library exterior"
+                  style="height: 220px; object-fit: cover"
+                  class="img-fluid w-100"
+                />
+                <h3 class="mt-3 fs-4 w-75">
+                  New University Library Expension Completed
+                </h3>
+                <p>
+                  Our state-of-the-art library upgrade is now open to students
+                  and stuff, offering modern study and digital resources
+                </p>
+                <p>Fabruary 10, 2025</p>
+                <a id="read-more-two" class="text-warning" href="#"
+                  >Read More →</a
+                >
+              </div>
+
+              <!-- News 3 -->
+              <div class="col-md-4 student-innovation-workshop">
+                <img
+                  src="images/university seminar event.jpg"
+                  alt="university seminar event"
+                  style="height: 220px; object-fit: cover"
+                  class="img-fluid w-100"
+                />
+                <h3 class="mt-3 fs-4 w-75">Student Innovation Workshop 2025</h3>
+                <p>
+                  A hands-on-workshop designed to inspire creativity and
+                  problem-solving among undergraduate students
+                </p>
+                <p>January 28, 2025</p>
+                <a id="read-more-three" class="text-warning" href="#"
+                  >Read More →</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== Why Choose Us Section (Westbridge University) ===== -->
+        <section class="container mt-5">
+          <div
+            class="d-flex flex-column align-items-start justify-content-start"
+          >
+            <h2 class="mb-2">Why Choose Westbridge University?</h2>
+            <p style="font-size: 16px">
+              At Westbridge University, we provide world-class education, modern
+              facilities, and opportunities for research and global exposure,
+              empowering students to achieve their full potentail and succeed in
+              their careers
+            </p>
+          </div>
+
+          <div class="row g-4 mb-4 mt-2 p-2">
+            <!-- item 1 -->
+            <div class="col-md-6 border border-2 border-white shadow-lg p-3">
+              <svg
+                class="img-fluid"
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#e3e3e3"
+              >
+                <path
+                  d="M480-120 200-272v-240L40-600l440-240 440 240v320h-80v-276l-80 44v240L480-120Zm0-332 274-148-274-148-274 148 274 148Zm0 241 200-108v-151L480-360 280-470v151l200 108Zm0-241Zm0 90Zm0 0Z"
+                />
+              </svg>
+              <h3 class="fs-4">Experienced Faculty</h3>
+              <p>
+                Learn from highly qualified lecturers and industry experts
+                dedicated to helping students succeed academically and
+                professionally
+              </p>
+            </div>
+
+            <!-- item 2 -->
+            <div class="col-md-6 border border-2 border-white shadow-lg p-3">
+              <svg
+                class="img-fluid"
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#e3e3e3"
+              >
+                <path
+                  d="M200-120q-51 0-72.5-45.5T138-250l222-270v-240h-40q-17 0-28.5-11.5T280-800q0-17 11.5-28.5T320-840h320q17 0 28.5 11.5T680-800q0 17-11.5 28.5T640-760h-40v240l222 270q32 39 10.5 84.5T760-120H200Zm0-80h560L520-492v-268h-80v268L200-200Zm280-280Z"
+                />
+              </svg>
+              <h3 class="fs-4">Modern Campus Facilities</h3>
+              <p>
+                Access state-of-the-art classrooms, laboratories, libraries, and
+                recreational spaces designed for effective learning
+              </p>
+            </div>
+
+            <!-- item 3 -->
+            <div class="col-md-6 border border-2 border-white shadow-lg p-3">
+              <svg
+                class="img-fluid"
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#e3e3e3"
+              >
+                <path
+                  d="M480-80q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-200v-80h320v80H320Zm10-120q-69-41-109.5-110T180-580q0-125 87.5-212.5T480-880q125 0 212.5 87.5T780-580q0 81-40.5 150T630-320H330Zm24-80h252q45-32 69.5-79T700-580q0-92-64-156t-156-64q-92 0-156 64t-64 156q0 54 24.5 101t69.5 79Zm126 0Z"
+                />
+              </svg>
+              <h3 class="fs-4">Research opportunities</h3>
+              <p>
+                Participate in Innovative research projects across diverse
+                fields, gaining hands-on experience and pratical skills
+              </p>
+            </div>
+
+            <!-- item 4 -->
+            <div class="col-md-6 border border-2 border-white shadow-lg p-3">
+              <svg
+                class="img-fluid"
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#e3e3e3"
+              >
+                <path
+                  d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-7-.5-14.5T799-507q-5 29-27 48t-52 19h-80q-33 0-56.5-23.5T560-520v-40H400v-80q0-33 23.5-56.5T480-720h40q0-23 12.5-40.5T563-789q-20-5-40.5-8t-42.5-3q-134 0-227 93t-93 227h200q66 0 113 47t47 113v40H400v110q20 5 39.5 7.5T480-160Z"
+                />
+              </svg>
+              <h3 class="fs-4">International Exposure</h3>
+              <p>
+                Benefits from exchange programs, global partnerships, and
+                seminars that provide a worldwide perspective on education
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== Student Life Section ===== -->
+        <section class="container mt-5 mb-5">
+          <div class="row g-4">
+            <div class="mb-2">
+              <h2 class="mt-5 text-dark">
+                Experience Life at Westbridge University
+              </h2>
+              <p style="font-size: 16px" class="text-start">
+                From academics to extracurriculars, our student enjoy a vibrant,
+                supportive and inspiring campus environment
+              </p>
+            </div>
+
+            <div
+              class="row g-4 mb-4 mt-2 p-2 border border-2 border-white shadow-sm"
+            >
+              <div class="col-md-6 p-3 shadow-lg">
+                <h4 class="fs-5">academic Excellence</h4>
+                <p class="mb-3 fs-6">
+                  Engage in dynamic lectures, hands-on-labs, and collaborative
+                  projects that prepare you for a successful career
+                </p>
+                <img
+                  src="images/students in lab.jpg"
+                  alt="students in the lab"
+                  style="width: 100%; object-fit: cover"
+                  class="img-fluid"
+                />
+              </div>
+
+              <div class="col-md-6 p-3 shadow-lg">
+                <h3 class="fs-5">Modern Campus Facilities</h3>
+                <p class="mb-3 fs-6">
+                  Study and relax in state-of-the-art libraries, sports
+                  complexes, study lounges, and recreation areas
+                </p>
+                <img
+                  src="images/campus facilities.jpg"
+                  alt="campus facilities"
+                  style="width: 100%; object-fit: cover"
+                  class="img-fluid"
+                />
+              </div>
+
+              <div class="col-md-6 p-3 shadow-lg">
+                <h3 class="fs-5">Sports & Societies</h3>
+                <p class="mb-3 fs-6">
+                  Join student-run sports, societies, and events to explore
+                  interests, develop leadership, and make lifelong friends
+                </p>
+                <img
+                  src="images/campus sports.jpg"
+                  alt="campus sports"
+                  style="width: 100%; object-fit: cover"
+                  class="img-fluid"
+                />
+              </div>
+
+              <div class="col-md-6 p-3 shadow-lg">
+                <h3 class="fs-5">Library</h3>
+                <p class="mb-3 fs-6">
+                  Stay active with your studies, search for books, magazines,
+                  and keep yourself busy in the labrary
+                </p>
+                <img
+                  src="images/campus library.jpg"
+                  alt="campus library"
+                  style="width: 100%; object-fit: cover"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== The Latest Section ===== -->
+        <section style="margin-top: 25px" class="container">
+          <h2 class="fs-2 mt-5 mb-3">The Latest at Westbridge</h2>
+
+          <div
+            class="d-flex justify-content-center align-items-center flex-column latest-container"
+          >
+            <div
+              class="mb-3 d-flex justify-content-center align-items-center p-5 gap-4 latest-at-westbridge-container"
+            >
+              <div
+                class="text-white"
+                style="width: 100%; background-color: #0a1f29"
+              >
+                <img
+                  src="images/university students walking campus.jpg"
+                  alt="university students wailking"
+                  style="width: 100%"
+                  class="img-fluid"
+                />
+                <div class="p-3">
+                  <h3 style="font-size: 20px">
+                    Applications are open for the 2025 academic session. Apply
+                    now to secure your spot
+                  </h3>
+                  <a href="" id="apply-here" class="text-warning nav-link"
+                    >Appply →</a
+                  >
+                </div>
+              </div>
+
+              <div class="" style="width: 100%; background-color: #0a1f29">
+                <img
+                  src="images/students group study university.jpg"
+                  alt="students studying together"
+                  style="width: 100%"
+                  class="img-fluid"
+                />
+                <div class="p-3">
+                  <h3 style="font-size: 20px; color: white">
+                    Tips on making friends, joining clubs, and balancing studies
+                    with campus life
+                  </h3>
+                  <a href="" id="read-more-btn" class="nav-link text-warning"
+                    >Read Here →</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Second container on The Latest from Westbridge University -->
+
+            <div
+              class="mb-3 d-flex justify-content-center align-items-center p-5 gap-4 latest-at-westbridge-container"
+            >
+              <div
+                class="text-white"
+                style="width: 100%; background-color: #0a1f29"
+              >
+                <img
+                  src="images/university library exterior.jpg"
+                  alt="university students wailking"
+                  style="width: 100%"
+                  class="img-fluid"
+                />
+                <div class="p-3">
+                  <h3 style="font-size: 20px">
+                    Westbridge Research Team Wins Innovation Award
+                  </h3>
+                  <p class="text-white">
+                    Our students and faculty make groundbreaking discoveries
+                    across multiple disciplines
+                  </p>
+                </div>
+              </div>
+
+              <div class="" style="width: 100%; background-color: #0a1f29">
+                <img
+                  src="images/students group study university.jpg"
+                  alt="students studying together"
+                  style="width: 100%"
+                  class="img-fluid"
+                />
+                <div class="p-3">
+                  <h3 style="font-size: 20px; color: white">
+                    Upcoming Campus Open Day 2025
+                  </h3>
+                  <p class="text-white">
+                    Explore our campus, meet faculty, and experience student
+                    life firsthand
+                  </p>
+                  <a href="" id="campus-day-btn" class="nav-link text-warning"
+                    >Read More →</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== C-T-A Section ===== -->
+        <section
+          style="background-color: #0a1f29; padding: 20px"
+          class="cta-section"
+        >
+          <div
+            style="width: 100%; height: 100%; padding: 20px"
+            class="d-flex align-items-center justify-content-center call-to-action-container cta-section"
+          >
+            <div class="mt-4 cta-first-container">
+              <p
+                class="text-white fw-semibold fs-4 mb-3 cta-para"
+                style="width: 75%"
+              >
+                Discover our courses, connect with expert faculty, and take the
+                first step toward a successful and fulfilling career. Your
+                future begins here
+              </p>
+              <img
+                src="images/campus life studying.jpg"
+                alt="studying in campus"
+                style="width: 75%"
+                class="img-fluid cta-image"
+              />
+            </div>
+            <div
+              class="w-100 d-flex justify-content-center align-items-start gap-2 flex-column cta-btn-container"
+              style="margin-left: -250px"
+            >
+              <button
+                onclick="alert('Thank you for applying to Westbridge University')"
+                type="button"
+                class="btn btn-warning fw-semibold apply-btn"
+              >
+                Apply Now
+              </button>
+              <button
+                onclick="alert('Sending Prospectus...')"
+                type="button"
+                class="btn btn-danger fw-semibold request-btn"
+              >
+                Request Prospectus
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== Popular Links Section ===== -->
+        <section style="background-color: #0a1f29" class="text-white">
+          <div class="p-5 container">
+            <h2 class="mb-4 fw-bold fs-1">Popular Links</h2>
+            <div
+              class="pb-2 d-flex justify-content-between align-items-center mb-5 fw-bold"
+            >
+              <ul
+                class="d-flex justify-content-between align-items-center mb-5 fw-bold gap-4 nav nav-underline"
+              >
+                <li class="nav-item">
+                  <a href="" class="nav-link nav-underline text-white"
+                    >FIND A COURSE</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link nav-underline text-white"
+                    >OPEN DAYS</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link nav-underline text-white"
+                    >VIRTUAL TOUR</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link nav-underline text-white"
+                    >ACCOMMODATION</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link nav-underline text-white"
+                    >STUDENT SUPPOSE SERVICES</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <hr class="text-white" />
+          </div>
+        </section>
+      </main>
+
+      <!-- ===== Footer Section ===== -->
+      <footer style="background-color: #0a1f29; color: white">
+        <div class="container">
+          <div class="row g-4 text-white p-4 footer-container">
+            <div class="col-md-4">
+              <h4 class="fs-5">Contact Us</h4>
+              <p class="mb-1 fs-6">123 Academic Way, Westbridge City</p>
+              <p class="mb-1 fs-6">+44 123 456 7890</p>
+              <p class="mb-1 fs-6">info@westbridgeuniversity.edu</p>
+            </div>
+
+            <div class="col-md-4">
+              <h4 class="fs-5">Quick Links</h4>
+              <nav class="navbar navbar-expand-lg">
+                <ul class="list-unstyled">
+                  <li><a href="/#" class="nav-link text-white">Home</a></li>
+                  <li><a href="/#" class="nav-link text-white">About</a></li>
+                  <li><a href="/#" class="nav-link text-white">Courses</a></li>
+                  <li>
+                    <a href="/#" class="nav-link text-white">Admission</a>
+                  </li>
+                  <li><a href="/#" class="nav-link text-white">Faculty</a></li>
+                  <li><a href="/#" class="nav-link text-white">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="col-md-4">
+              <h4 class="fs-5">Legal</h4>
+              <nav class="navbar navbar-expand-lg">
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#" class="nav-link text-white">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-white"
+                      >Terms & Conditions</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-white">Accessibility</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-end align-items-center mt-4 pb-5">
+            <div class="d-flex align-items-center gap-4">
+              <ul class="list-unstyled d-flex gap-4 mb-0">
+                <li>
+                  <a href="#" class="text-white nav-link">Facebook</a>
+                </li>
+                <li><a href="#" class="text-white nav-link">Instagram</a></li>
+                <li><a href="#" class="text-white nav-link">LinkedIn</a></li>
+              </ul>
+
+              <small class="text-white"
+                >&copy; 2025 Westbridge University</small
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

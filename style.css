@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.top-nav-bar {
+  font-size: 16px;
+}
+.university {
+  font-weight: 800;
+  font-size: 25px;
+  font-style: italic;
+}
+.select {
+  background-color: #0a1f29;
+  color: whitesmoke;
+  padding: 8px 20px;
+  border: none;
+  outline: none;
+  display: none;
+}
+.hero-heading {
+  font-size: 45px;
+  color: black;
+  font-weight: 700;
+  width: 100%;
+}

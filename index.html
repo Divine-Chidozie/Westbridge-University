@@ -18,7 +18,7 @@
     <div class="">
       <header class="container-fluid">
         <nav
-          class="d-flex justify-content-between align-items-center mt-4 navbar navbar-expand-lg me-auto ms-auto"
+          class="d-flex justify-content-between align-items-center mt-4 navbar navbar-expand-lg me-auto ms-auto header-container"
           style="margin-bottom: 70px"
         >
           <span
@@ -61,22 +61,28 @@
             </li>
           </ul>
 
-          <select id="select" class="select" onchange="navigatePage()">
-            <option value="" id="open">Open</option>
-            <option value="home">ADMISSION</option>
-            <option value="about">TRAINING</option>
-            <option value="courses">RESEARCH</option>
-            <option value="admission">COLLABORATIONS</option>
-            <option value="faculty">CAMPUS LIFE</option>
-            <option value="contact">THE UNIVERSITY</option>
-            <a
-              href=""
-              id="register-btn"
-              class="btn text-white header-register-btn"
-              style="background-color: #0a1f29"
-              >Register</a
+          <!-- HAMBURGER MENU -->
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <!-- MOBILE DROPDOWN -->
+          <div class="menu" id="menu">
+            <a href="#" class="text-dark" style="font-size: 13px">ADMISSION</a>
+            <a href="#" class="text-dark" style="font-size: 13px">TRANING</a>
+            <a href="#" class="text-dark" style="font-size: 13px">RESEARCH</a>
+            <a href="#" class="text-dark" style="font-size: 13px"
+              >COLLABORATIONS</a
             >
-          </select>
+            <a href="#" class="text-dark" style="font-size: 13px"
+              >CAMPUS LIFE</a
+            >
+            <a href="#" class="text-dark" style="font-size: 13px"
+              >THE UNIVERSITY</a
+            >
+          </div>
 
           <a
             href=""
@@ -103,7 +109,9 @@
               class="hero-container position-absolute top-100 start-50 translate-end text-start bg-body-tertiary p-4"
             >
               <h1 class="hero-heading">Welcome to Westbridge University</h1>
-              <p class="fs-5">Empowering Education for a Brighter Future</p>
+              <p class="fs-5 hero-para">
+                Empowering Education for a Brighter Future
+              </p>
               <a
                 href=""
                 id="apply-btn"
@@ -186,7 +194,7 @@
             <button
               onclick="handleCourse()"
               type="button"
-              class="btn text-white"
+              class="btn text-white search-course-btn"
               style="background-color: #0a1f29"
             >
               Search Our Courses
@@ -195,9 +203,9 @@
         </section>
 
         <!-- ===== News / Event Section ===== -->
-        <section class="container my-5">
-          <div class="text-white p-4 rounded" style="background-color: #0a1f29">
-            <h2 class="mb-4">Latest News & Events</h2>
+        <section class="container my-5 rounded news-and-event">
+          <div class="text-white p-4" style="background-color: #0a1f29">
+            <h2 class="mb-4 news-heading">Latest News & Events</h2>
 
             <div class="row g-4 latest-news-and-event">
               <!-- News 1 -->
@@ -264,9 +272,11 @@
         <!-- ===== Why Choose Us Section (Westbridge University) ===== -->
         <section class="container mt-5">
           <div
-            class="d-flex flex-column align-items-start justify-content-start"
+            class="d-flex flex-column align-items-start justify-content-start why-choose-container"
           >
-            <h2 class="mb-2">Why Choose Westbridge University?</h2>
+            <h2 class="mb-2 why-choose-heading">
+              Why Choose Westbridge University?
+            </h2>
             <p style="font-size: 16px">
               At Westbridge University, we provide world-class education, modern
               facilities, and opportunities for research and global exposure,
@@ -277,7 +287,9 @@
 
           <div class="row g-4 mb-4 mt-2 p-2">
             <!-- item 1 -->
-            <div class="col-md-6 border border-2 border-white shadow-lg p-3">
+            <div
+              class="col-md-6 border border-2 border-white shadow-lg p-3 why-choose-card"
+            >
               <svg
                 class="img-fluid"
                 xmlns="http://www.w3.org/2000/svg"
@@ -299,7 +311,9 @@
             </div>
 
             <!-- item 2 -->
-            <div class="col-md-6 border border-2 border-white shadow-lg p-3">
+            <div
+              class="col-md-6 border border-2 border-white shadow-lg p-3 why-choose-card"
+            >
               <svg
                 class="img-fluid"
                 xmlns="http://www.w3.org/2000/svg"
@@ -320,7 +334,9 @@
             </div>
 
             <!-- item 3 -->
-            <div class="col-md-6 border border-2 border-white shadow-lg p-3">
+            <div
+              class="col-md-6 border border-2 border-white shadow-lg p-3 why-choose-card"
+            >
               <svg
                 class="img-fluid"
                 xmlns="http://www.w3.org/2000/svg"
@@ -341,7 +357,9 @@
             </div>
 
             <!-- item 4 -->
-            <div class="col-md-6 border border-2 border-white shadow-lg p-3">
+            <div
+              class="col-md-6 border border-2 border-white shadow-lg p-3 why-choose-card"
+            >
               <svg
                 class="img-fluid"
                 xmlns="http://www.w3.org/2000/svg"
@@ -366,7 +384,7 @@
         <!-- ===== Student Life Section ===== -->
         <section class="container mt-5 mb-5">
           <div class="row g-4">
-            <div class="mb-2">
+            <div class="mb-2 student-life">
               <h2 class="mt-5 text-dark">
                 Experience Life at Westbridge University
               </h2>
@@ -377,7 +395,7 @@
             </div>
 
             <div
-              class="row g-4 mb-4 mt-2 p-2 border border-2 border-white shadow-sm"
+              class="row g-4 mb-4 mt-2 p-2 border border-2 border-white shadow-sm student-life-container-card"
             >
               <div class="col-md-6 p-3 shadow-lg">
                 <h4 class="fs-5">academic Excellence</h4>
@@ -440,7 +458,9 @@
 
         <!-- ===== The Latest Section ===== -->
         <section style="margin-top: 25px" class="container">
-          <h2 class="fs-2 mt-5 mb-3">The Latest at Westbridge</h2>
+          <h2 class="fs-2 mt-5 mb-3 latest-heading">
+            The Latest at Westbridge
+          </h2>
 
           <div
             class="d-flex justify-content-center align-items-center flex-column latest-container"
@@ -458,7 +478,7 @@
                   style="width: 100%"
                   class="img-fluid"
                 />
-                <div class="p-3">
+                <div class="p-3 latest-card-heading-para">
                   <h3 style="font-size: 20px">
                     Applications are open for the 2025 academic session. Apply
                     now to secure your spot
@@ -476,7 +496,7 @@
                   style="width: 100%"
                   class="img-fluid"
                 />
-                <div class="p-3">
+                <div class="p-3 latest-card-heading-para">
                   <h3 style="font-size: 20px; color: white">
                     Tips on making friends, joining clubs, and balancing studies
                     with campus life
@@ -503,7 +523,7 @@
                   style="width: 100%"
                   class="img-fluid"
                 />
-                <div class="p-3">
+                <div class="p-3 latest-card-heading-para">
                   <h3 style="font-size: 20px">
                     Westbridge Research Team Wins Innovation Award
                   </h3>
@@ -521,7 +541,7 @@
                   style="width: 100%"
                   class="img-fluid"
                 />
-                <div class="p-3">
+                <div class="p-3 latest-card-heading-para">
                   <h3 style="font-size: 20px; color: white">
                     Upcoming Campus Open Day 2025
                   </h3>
@@ -675,7 +695,7 @@
           </div>
 
           <div class="d-flex justify-content-end align-items-center mt-4 pb-5">
-            <div class="d-flex align-items-center gap-4">
+            <div class="d-flex align-items-center gap-4 footer-social-icons">
               <ul class="list-unstyled d-flex gap-4 mb-0">
                 <li>
                   <a href="#" class="text-white nav-link">Facebook</a>

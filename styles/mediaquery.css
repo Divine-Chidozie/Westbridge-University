@@ -1,3 +1,40 @@
+@media (max-width: 991px) {
+  /* Hide Register Button */
+  #register-btn {
+    display: none !important;
+  }
+
+  /* Show Hamburger */
+  .hamburger {
+    display: flex !important;
+  }
+
+  /* Hero fix */
+  .hero-container {
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Latest section */
+  .latest-at-westbridge-container {
+    flex-direction: column !important;
+    padding: 20px !important;
+    gap: 20px !important;
+  }
+
+  /* CTA Section */
+  .cta-section {
+    flex-direction: column !important;
+  }
+
+  .cta-btn-container {
+    margin-left: 0 !important;
+    width: 100% !important;
+    margin-top: 20px !important;
+  }
+}
+
 @media screen and (max-width: 900px) {
   /* General page width */
   html,
@@ -8,16 +45,10 @@
     overflow-x: hidden;
     box-sizing: border-box;
   }
-
   /* Hide desktop navbar links */
   .header-navbar-component {
     display: none !important;
   }
-
-  /* Hide Register button */
-  /* .header-register-btn {
-    display: none !important;
-  } */
 
   /* Hero container responsiveness */
   .hero-container-img {
@@ -75,16 +106,6 @@
   }
 }
 
-/* Laptop and below (72rem) */
-
-/* Tablet and below (43rem) */
-/* @media screen and (max-width: 43rem) {
-  body {
-    background-color: red;
-    color: whitesmoke;
-  }
-} */
-
 @media screen and (max-width: 767px) {
   .atest-container {
     width: 100%;
@@ -98,6 +119,15 @@
 
 /* Phone and below (34rem) */
 @media screen and (max-width: 34rem) {
+  .hero-heading {
+    font-size: 24px !important;
+  }
+  .hero-container {
+    padding: 15px !important;
+  }
+  .Featured-programmes-container img {
+    width: 180px !important;
+  }
   .header-register-btn {
     display: none;
   }
@@ -107,20 +137,129 @@
   .hero-container-img {
     position: relative !important;
   }
+  .hero-container-img img {
+    width: 100% !important;
+    box-sizing: border-box;
+  }
   .hero-container {
     position: absolute !important;
     top: 470px !important;
+    width: 100%;
+    text-align: center !important;
   }
-  .Featured-programmes-container {
-    margin-top: 220px !important;
+  .hero-heading,
+  .hero-para {
+    width: 90%;
+  }
+  .hero-heading {
+    font-size: 19px !important;
+  }
+  .hero-para {
+    font-size: 16px !important;
+  }
+  .hero-container a {
+    font-size: 15px !important;
+    padding: 4px 10px;
+  }
 
+  /* ***** Featured Programme Section ***** */
+  .Featured-programmes-container {
+    margin-top: 270px !important;
+    text-align: center;
     padding-bottom: 10px !important;
+  }
+  .Featured-programmes-container h2 {
+    font-size: 18px !important;
+  }
+  .Featured-programmes-container > div img {
+    width: 100% !important;
+  }
+  .Featured-programmes-container h3 {
+    font-size: 15px !important;
   }
   .card-image {
     width: 100% !important;
   }
+  .search-course-btn {
+    font-size: 15px !important;
+    padding: 4px 10px;
+  }
+
+  /* ***** NEWS & EVENT SECTION ***** */
+  .news-and-event {
+    margin: 0 auto !important;
+    width: 100% !important;
+  }
   .latest-at-westbridge-container {
     padding: 5px !important;
+  }
+  .news-heading {
+    font-size: 19px !important;
+    text-align: center;
+  }
+  .latest-news-and-event {
+    margin: 0 auto !important;
+  }
+  .undergraduate-admission-container h3 {
+    width: 100% !important;
+    font-size: 17px !important;
+  }
+  .undergraduate-admission-container p {
+    font-size: 14px !important;
+    margin-top: -5px;
+  }
+  .university-library-expension h3 {
+    width: 100% !important;
+    font-size: 17px !important;
+  }
+  .university-library-expension p {
+    font-size: 14px !important;
+    margin-top: -5px;
+  }
+  .student-innovation-workshop h3 {
+    width: 100% !important;
+    font-size: 17px !important;
+  }
+  .student-innovation-workshop p {
+    font-size: 14px !important;
+    margin-top: -5px;
+  }
+
+  /* ***** WHY CHOOSE US SECTION ***** */
+  .why-choose-container {
+    text-align: center !important;
+  }
+  .why-choose-heading {
+    font-size: 19px !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+  }
+  .why-choose-container p {
+    font-size: 16px !important;
+    margin-top: 5px !important;
+  }
+  .why-choose-card h3 {
+    font-size: 17px !important;
+  }
+  .why-choose-card p {
+    font-size: 15px !important;
+  }
+
+  /* ***** STUDENT LIFE SECTION ***** */
+  .student-life {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .student-life h2 {
+    width: 100% !important;
+    font-size: 19px !important;
+    text-align: center;
+  }
+  .student-life p {
+    font-size: 16px !important;
+    text-align: center !important;
   }
   .cta-section {
     width: 100% !important;
@@ -129,8 +268,39 @@
     text-align: center !important;
     font-size: 15px !important;
   }
+  .student-life-container-card {
+    margin: auto !important;
+    border: none !important;
+    border-radius: none !important;
+    box-shadow: none !important;
+  }
+  .student-life-container-card h4 {
+    font-size: 17px !important;
+  }
+  .student-life-container-card p {
+    font-size: 15px !important;
+  }
+
+  /* ***** LATEST SECTION ***** */
+  .latest-heading {
+    font-size: 19px !important;
+    text-align: center;
+  }
+  .latest-card-heading-para h3 {
+    font-size: 17px !important;
+  }
+  .latest-card-heading-para p {
+    font-size: 15px !important;
+  }
+
+  /* ***** CTA SECTION ***** */
   .cta-image {
     width: 100% !important;
+  }
+  .cta-first-container p {
+    width: 100% !important;
+    font-weight: normal !important;
+    font-size: 15px !important;
   }
   .cta-btn-container {
     display: flex !important;
@@ -139,5 +309,32 @@
     flex-direction: column !important;
     margin: 0 auto !important;
     margin-top: 10px !important;
+  }
+  .cta-btn-container button {
+    font-size: 15px !important;
+    padding: 4px 10px;
+  }
+
+  /* ***** FOOTER SECTION ***** */
+  .footer-social-icons {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: start !important;
+    justify-content: flex-start !important;
+  }
+}
+
+/* ===== VERY SMALL PHONES ===== */
+@media (max-width: 576px) {
+  .hero-heading {
+    font-size: 24px !important;
+  }
+
+  .hero-container {
+    padding: 15px !important;
+  }
+
+  .Featured-programmes-container img {
+    width: 180px !important;
   }
 }

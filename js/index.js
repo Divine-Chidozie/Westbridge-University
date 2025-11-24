@@ -1,3 +1,8 @@
+const hamburger = document.getElementById("hamburger");
+hamburger.addEventListener("click", function () {
+  document.getElementById("menu").classList.toggle("show");
+});
+
 document.getElementById("register-btn").onclick = function () {
   console.log("Proceed to the Registration form to register your account!");
 };
@@ -57,17 +62,3 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   });
 });
-
-function navigatePage() {
-  const value = document.getElementById("select").value;
-
-  if (value) {
-    window.location.href = value + ".html";
-    // Example: "home.html", "about.html"
-  }
-}
-
-const openButton = document.getElementById("open");
-if (openButton === "Open") {
-  openButton.textContent = "Close";
-}

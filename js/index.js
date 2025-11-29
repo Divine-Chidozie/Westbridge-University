@@ -1,64 +1,25 @@
 const hamburger = document.getElementById("hamburger");
-hamburger.addEventListener("click", function () {
+
+hamburger.addEventListener("click", () => {
   document.getElementById("menu").classList.toggle("show");
 });
 
-document.getElementById("register-btn").onclick = function () {
-  console.log("Proceed to the Registration form to register your account!");
-};
+function graduate() {
+  const underGraduateBtn = document.getElementById("undergraduate-btn");
+  const postGraduateBtn = document.getElementById("postgraduate-btn");
 
-const applyButton = document.getElementById("apply-btn");
+  const graduteBtn = [underGraduateBtn, postGraduateBtn];
 
-applyButton.onclick = (e) => {
-  e.preventDefault();
-  console.log(
-    "Kindly click on the next page to apply for an programme of your choice.."
-  );
-};
-
-function handleCourse() {
-  console.log("Search all courses here...");
+  graduteBtn.map((btn) => {
+    btn.addEventListener("click", (event) => {
+      event.preventDefault();
+      alert("Explore our Courses");
+    });
+  });
 }
 
-const readMoreOne = document.getElementById("read-more-one");
-const readMoreTwo = document.getElementById("read-more-two");
-const readMoreThree = document.getElementById("read-more-three");
+graduate();
 
-readMoreOne.onclick = function (e) {
-  e.preventDefault();
-  console.log("2025 undergraduate admission opens... read here");
-};
-readMoreTwo.addEventListener("click", (e) => {
-  e.preventDefault();
-  console.log("New university library expension completed... read here");
-});
-
-readMoreThree.onclick = (e) => {
-  e.preventDefault();
-  console.log("Student innovation workshop 2025... read here");
-};
-
-document.getElementById("apply-here").addEventListener("click", (e) => {
-  e.preventDefault();
-  console.log(
-    "Application for 2025 academic seesion are currently open.. click to apply here"
-  );
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("read-more-btn").onclick = function (e) {
-    e.preventDefault();
-    console.log(
-      "Learn tips on making new friends, joining fan clubs and balancing studies in campus... Read more"
-    );
-  };
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("campus-day-btn").addEventListener("click", (e) => {
-    e.preventDefault();
-    console.log(
-      "Explore our campus and rexperience student life at first hand... Read more articles here"
-    );
-  });
-});
+function handleCourse() {
+  console.log("Search all our Courses here...");
+}

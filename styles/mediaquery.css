@@ -1,37 +1,47 @@
-@media (max-width: 991px) {
-  /* Hide Register Button */
-  #register-btn {
-    display: none !important;
+@media (max-width: 1200px) {
+  html,
+  body {
+    overflow-x: hidden;
+    box-sizing: border-box;
   }
-
-  /* Show Hamburger */
-  .hamburger {
-    display: flex !important;
-  }
-
-  /* Hero fix */
-  .hero-container {
-    width: 90%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
   /* Latest section */
   .latest-at-westbridge-container {
     flex-direction: column !important;
     padding: 20px !important;
     gap: 20px !important;
   }
+  .certificate-btn-container {
+    width: 100%;
+  }
+  .certificate-btn-container a {
+    width: 100% !important;
+    font-size: 15px !important;
+    padding: 10px 20px !important;
+  }
 
   /* CTA Section */
   .cta-section {
     flex-direction: column !important;
   }
-
+  .cta-first-container {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+  }
+  .cta-para {
+    text-align: center;
+    font-size: 16px !important;
+    font-weight: normal !important;
+  }
   .cta-btn-container {
-    margin-left: 0 !important;
-    width: 100% !important;
+    margin: 0 auto !important;
+    width: 50% !important;
     margin-top: 20px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
   }
 }
 
@@ -39,29 +49,30 @@
   /* General page width */
   html,
   body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
     overflow-x: hidden;
     box-sizing: border-box;
+  }
+  .first-nav-component {
+    margin: 0 auto !important;
   }
   /* Hide desktop navbar links */
   .header-navbar-component {
     display: none !important;
   }
-
-  /* Hero container responsiveness */
-  .hero-container-img {
-    position: relative;
+  .hamburger {
+    display: flex !important;
   }
-
-  .hero-container {
-    position: absolute;
-    top: 60%; /* Adjust hero text lower for mobile */
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    text-align: center;
+  .certificate-heading {
+    font-size: 48px !important;
+    width: 100% !important;
+  }
+  .certificate-btn-container {
+    display: flex;
+    flex-direction: column;
+    width: 80% !important;
+  }
+  .find-future-container h2 {
+    font-size: 30px !important;
   }
   .latest-news-and-event {
     display: flex;
@@ -107,13 +118,81 @@
 }
 
 @media screen and (max-width: 767px) {
-  .atest-container {
-    width: 100%;
+  /* ***** TOP-FIRST-NAV-CONTAINER ***** */
+  .first-nav-component {
+    margin: 0 auto !important;
+    width: 100% !important;
+  }
+
+  /* ***** HERO-HEADER-SECTION ***** */
+  .hero-container-open-day {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .hero-container-open-day img {
+    width: 100% !important;
+  }
+  .hero-sub-container {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .hero-sub-container h1 {
+    font-size: 35px !important;
+    margin-bottom: 5px !important;
+  }
+  .hero-sub-container p {
+    font-size: 16px !important;
+    text-align: center !important;
+  }
+  .hero-sub-container div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ***** MORE-THEN-CERTIFICATE-SECTION ***** */
+  .certificate-section-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .certificate-section-container img {
+    width: 100% !important;
+  }
+  .certificate-section-container > div {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .certificate-heading {
+    text-align: center !important;
+    font-size: 30px !important;
+    margin-bottom: 5px !important;
+  }
+  .hero-para {
+    text-align: center !important;
+    font-size: 17px !important;
+  }
+
+  /* ***** FIND-FUTURE-SECTION ***** */
+  .find-future-container {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .find-future-container h2 {
+    font-size: 25px !important;
   }
   .latest-at-westbridge-container {
     display: flex !important;
     flex-direction: column !important;
     padding: 5px !important;
+  }
+
+  /* ***** CTA-BTN-CONTAINER ***** */
+  .cta-btn-container {
+    margin: 5px auto !important;
+  }
+  .cta-btn-container button {
+    margin-top: 5px !important;
   }
 }
 
@@ -309,6 +388,7 @@
     flex-direction: column !important;
     margin: 0 auto !important;
     margin-top: 10px !important;
+    width: 80% !important;
   }
   .cta-btn-container button {
     font-size: 15px !important;
@@ -321,20 +401,5 @@
     flex-direction: column !important;
     align-items: start !important;
     justify-content: flex-start !important;
-  }
-}
-
-/* ===== VERY SMALL PHONES ===== */
-@media (max-width: 576px) {
-  .hero-heading {
-    font-size: 24px !important;
-  }
-
-  .hero-container {
-    padding: 15px !important;
-  }
-
-  .Featured-programmes-container img {
-    width: 180px !important;
   }
 }

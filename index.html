@@ -11,12 +11,34 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="styles/mediaquery.css" />
+    <!-- <link rel="stylesheet" href="styles/new-media-query.css" /> -->
     <title>Westbridge University</title>
   </head>
   <body>
     <!-- ===== Navbar(Header) ===== -->
     <div class="">
-      <header class="container-fluid">
+      <header class="container">
+        <div class="first-nav-component">
+          <ul
+            class="d-flex justify-content-center align-items-center nav nav-underline"
+          >
+            <li class="nav-item">
+              <a href="" class="nav-link fw-semibold text-white nav-component"
+                >Current Students</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link fw-semibold text-white nav-component"
+                >International</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link fw-semibold text-white nav-component"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
         <nav
           class="d-flex justify-content-between align-items-center mt-4 navbar navbar-expand-lg me-auto ms-auto header-container"
           style="margin-bottom: 70px"
@@ -25,39 +47,28 @@
             class="fw-bold fs-5 navbar-brand"
             style="text-decoration: underline; text-underline-offset: 10px"
             >Westbridge
-            <span class="university text-warning">/ University</span>
+            <span class="university text-warning">University</span>
           </span>
 
           <ul
             class="d-inline-flex gap-4 nav nav-underline header-navbar-component"
           >
             <li class="nav-item">
-              <a class="nav-link active fw-bold" href="#">ADMISSION</a>
+              <a class="nav-link active" href="#">Admission</a>
             </li>
             <li class="nav-item">
-              <a class="top-nav-bar nav-link text-black fw-bold" href=""
-                >TRAINING</a
+              <a class="top-nav-bar nav-link text-black" href="">Training</a>
+            </li>
+            <li class="nav-item">
+              <a class="top-nav-bar nav-link text-black" href="">Research</a>
+            </li>
+            <li class="nav-item">
+              <a class="top-nav-bar nav-link text-black" href=""
+                >Collaborations</a
               >
             </li>
             <li class="nav-item">
-              <a class="top-nav-bar nav-link text-black fw-bold" href=""
-                >RESEARCH</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="top-nav-bar nav-link text-black fw-bold" href=""
-                >COLLABORATIONS</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="top-nav-bar nav-link text-black fw-bold" href=""
-                >CAMPUS LIFE</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="top-nav-bar nav-link text-black fw-bold" href=""
-                >THE UNIVERSITY</a
-              >
+              <a class="top-nav-bar nav-link text-black" href="">Campus Life</a>
             </li>
           </ul>
 
@@ -70,65 +81,125 @@
 
           <!-- MOBILE DROPDOWN -->
           <div class="menu" id="menu">
-            <a href="#" class="text-dark" style="font-size: 13px">ADMISSION</a>
-            <a href="#" class="text-dark" style="font-size: 13px">TRANING</a>
-            <a href="#" class="text-dark" style="font-size: 13px">RESEARCH</a>
-            <a href="#" class="text-dark" style="font-size: 13px"
-              >COLLABORATIONS</a
-            >
-            <a href="#" class="text-dark" style="font-size: 13px"
-              >CAMPUS LIFE</a
-            >
-            <a href="#" class="text-dark" style="font-size: 13px"
-              >THE UNIVERSITY</a
-            >
+            <a href="#" class="text-dark navlink active">Admission</a>
+            <a href="#" class="text-dark">Traning</a>
+            <a href="#" class="text-dark">Resreach</a>
+            <a href="#" class="text-dark">Collaborations</a>
+            <a href="#" class="text-dark">Campus Life</a>
           </div>
-
-          <a
-            href=""
-            id="register-btn"
-            class="btn text-white header-register-btn"
-            style="background-color: #0a1f29"
-            >Register</a
-          >
         </nav>
       </header>
 
-      <main>
-        <!-- ===== Hero Section ===== -->
+      <main style="margin-top: 180px">
+        <!-- ===== HERO SECTION ===== -->
+        <!-- ** open day section **  -->
         <section>
-          <div>
-            <div class="hero-container-img position-relative">
-              <img
-                src="images/westbridge-banner-image.jpg"
-                alt="Westbridge Home Image"
-                class="img-fluid w-100"
-              />
-            </div>
+          <div
+            class="hero-container-open-day"
+            style="
+              background-color: #0a1f29;
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
             <div
-              class="hero-container position-absolute top-100 start-50 translate-end text-start bg-body-tertiary p-4"
+              class="d-flex flex-column justify-content-center align-items-start p-5 hero-sub-container"
             >
-              <h1 class="hero-heading">Welcome to Westbridge University</h1>
-              <p class="fs-5 hero-para">
-                Empowering Education for a Brighter Future
+              <h1 class="text-white mb-4" style="font-size: 60px">
+                Westbridge University
+              </h1>
+              <p class="hero-para text-white w-100" style="font-size: 19px">
+                Our Open Days and event are designed to give you more
+                information about courses and student life here on Westbridge
               </p>
-              <a
-                href=""
-                id="apply-btn"
-                class="btn text-white"
-                style="background-color: #0a1f29"
-                >Apply Now</a
+              <div class="d-flex gap-2">
+                <a
+                  href="#"
+                  id="undergraduate-btn"
+                  class="btn btn-danger text-white py-3 px-5"
+                  style="border-radius: 0; font-weight: bolders"
+                  >Undergraduate</a
+                >
+                <a
+                  href="#"
+                  id="postgraduate-btn"
+                  class="btn btn-outline-secondary text-white py-3 px-5 postgraduate-btn"
+                  style="
+                    border-radius: 0;
+                    font-weight: bolder;
+                    border: 2px solid white;
+                  "
+                  >Postgraduate</a
+                >
+              </div>
+            </div>
+            <img
+              src="images/westbridge-banner-image.jpg"
+              alt="Westbridge Home Image"
+              style="height: 500px; width: 500px; object-fit: cover"
+            />
+          </div>
+        </section>
+
+        <!-- ===== More Than Certificate Section ===== -->
+        <section>
+          <div
+            class="certificate-section-container"
+            style="
+              background-color: white;
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <img
+              src="images/more-then-certificate.png"
+              alt="Westbridge Home Image"
+              style="height: 500px; width: 500px; object-fit: cover"
+            />
+            <div
+              class="d-flex flex-column justify-content-center align-items-start p-5"
+            >
+              <h1
+                class="mb-4 fw-bold certificate-heading"
+                style="font-size: 60px; color: #0a1f29; width: 70%"
               >
+                <span class="text-danger">MORE</span> THEN JUST A CERTIFICATE
+              </h1>
+              <p class="hero-para text-dark w-75" style="font-size: 17px">
+                Arrive a student, leave an expert and become unstoppable when
+                you study with Us.
+              </p>
+              <div class="d-flex gap-2 certificate-btn-container">
+                <a
+                  href="#"
+                  id="undergraduate-btn"
+                  class="btn btn-danger text-white py-3 px-5"
+                  style="border-radius: 0"
+                  >BROWSE OUR COURSES</a
+                >
+                <a
+                  href="#"
+                  id="postgraduate-btn"
+                  class="btn btn-outline-danger text-danger py-3 px-5 postgraduate-btn"
+                  style="border-radius: 0"
+                  >ORDER A PROSPECTUS</a
+                >
+              </div>
             </div>
           </div>
         </section>
+
         <!-- ===== Featured Programmes Section -->
         <section class="container my-5 Featured-programmes-container">
-          <h2 class="mb-4 fs-2 fw-bold text-dark">Find Your Future</h2>
+          <h2 class="mb-4 fs-2 fw-bold text-dark">BECOME A STUDENT</h2>
           <!-- card one -->
           <div class="row g-4">
             <div
-              class="col-md-4 text-center border border-2 border-white shadow-lg p-3"
+              class="col-md-4 text-center border border-2 border-white shadow-lg p-3 student-feature-programme"
             >
               <img
                 src="images/computer-science.jpg"
@@ -150,7 +221,7 @@
 
             <!-- card two -->
             <div
-              class="col-md-4 text-center border border-2 border-white shadow-lg p-3"
+              class="col-md-4 text-center border border-2 border-white shadow-lg p-3 student-feature-programme"
             >
               <img
                 src="images/Business-Administration.jpg"
@@ -172,7 +243,7 @@
 
             <!-- card three -->
             <div
-              class="col-md-4 text-center border border-2 border-white shadow-lg p-3"
+              class="col-md-4 text-center border border-2 border-white shadow-lg p-3 student-feature-programme"
             >
               <img
                 src="images/nursing.jpg"
@@ -190,61 +261,69 @@
               </p>
             </div>
           </div>
-          <div class="text-center mt-4">
+
+          <div
+            class="text-center mt-4 d-flex justify-content-between align-items-center p-5 find-future-container"
+          >
+            <h2 style="font-weight: bold; font-size: 40px">FIND YOUR FUTURE</h2>
             <button
               onclick="handleCourse()"
               type="button"
-              class="btn text-white search-course-btn"
-              style="background-color: #0a1f29"
+              class="btn btn-danger text-white py-3 px-5 search-course-btn"
+              style="border-radius: 0"
             >
-              Search Our Courses
+              SEARCH OUR COURSES
             </button>
           </div>
         </section>
 
         <!-- ===== News / Event Section ===== -->
         <section class="container my-5 rounded news-and-event">
-          <div class="text-white p-4" style="background-color: #0a1f29">
-            <h2 class="mb-4 news-heading">Latest News & Events</h2>
+          <div class="text-white p-4">
+            <h2 class="mb-4 news-heading fs-2 fw-bold text-dark">
+              LATEST NEWS & EVENTS
+            </h2>
 
             <div class="row g-4 latest-news-and-event">
               <!-- News 1 -->
-              <div class="col-md-4 undergraduate-admission-container">
+              <div class="col-md-6 undergraduate-admission-container">
                 <img
                   src="images/students in classroom.jpg"
                   alt="students in classroom"
                   style="height: 220px; object-fit: cover"
                   class="img-fluid w-100"
                 />
-                <h3 class="mt-4 fs-4 w-75">
-                  2025 Undergraduate Admission Opens
-                </h3>
-                <p>Applications are now open for the 2025 academic session</p>
-                <p>March 21, 2025</p>
-                <a id="read-more-one" class="text-warning" href="#"
-                  >Read More →</a
-                >
+                <div style="background-color: #0a1f29" class="p-3">
+                  <h3 class="fs-4 w-75">2025 Undergraduate Admission Opens</h3>
+                  <p>Applications are now open for the 2025 academic session</p>
+                  <p>March 21, 2025</p>
+                  <a id="read-more-one" class="text-warning" href="#"
+                    >Read More →</a
+                  >
+                </div>
               </div>
 
               <!-- News 2 -->
-              <div class="col-md-4 university-library-expension">
+              <div class="col-md-6 university-library-expension">
                 <img
                   src="images/university library exterior.jpg"
                   alt="university library exterior"
                   style="height: 220px; object-fit: cover"
                   class="img-fluid w-100"
                 />
-                <h3 class="mt-3 fs-4 w-75">
-                  New University Library Expension Completed
-                </h3>
-                <p>
-                  Our state-of-the-art library upgrade is now open to students
-                  and stuff, offering modern study and digital resources
-                </p>
-                <p>Fabruary 10, 2025</p>
-                <a id="read-more-two" class="text-warning" href="#"
-                  >Read More →</a
-                >
+                <div style="background-color: #0a1f29">
+                  <h3 class="fs-4 w-75">
+                    New University Library Expension Completed
+                  </h3>
+                  <p>
+                    Our state-of-the-art library upgrade is now open to students
+                    and stuff, offering modern study and digital resources
+                  </p>
+                  <p>Fabruary 10, 2025</p>
+                  <a id="read-more-two" class="text-warning" href="#"
+                    >Read More →</a
+                  >
+                </div>
               </div>
 
               <!-- News 3 -->
@@ -590,16 +669,18 @@
               <button
                 onclick="alert('Thank you for applying to Westbridge University')"
                 type="button"
-                class="btn btn-warning fw-semibold apply-btn"
+                class="btn btn-danger btn-sm fw-semibold apply-btn w-100 py-2 px-5"
+                style="border-radius: 0; font-size: 13px"
               >
-                Apply Now
+                BROWSE OUR COURSES
               </button>
               <button
                 onclick="alert('Sending Prospectus...')"
                 type="button"
-                class="btn btn-danger fw-semibold request-btn"
+                class="btn btn-outline-danger bg-white fw-semibold request-btn w-100 py-2 px-5"
+                style="border-radius: 0; font-size: 13px"
               >
-                Request Prospectus
+                ORDER A PROSPECTUS
               </button>
             </div>
           </div>

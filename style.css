@@ -50,6 +50,29 @@
 
 /* ---------- GENERAL STYLING ---------- */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+.first-nav-component {
+  background-color: #0a1f29;
+  width: 50%;
+  display: flex;
+  margin-left: 570px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 20px;
+}
+
 .header-navbar-component {
   display: flex;
   gap: 2rem;
@@ -99,4 +122,10 @@
 
 .menu.show {
   display: flex;
+}
+
+/* ===== Postgradute btn ===== */
+.postgraduate-btn:hover {
+  background: white;
+  color: rgb(168, 165, 165) !important;
 }

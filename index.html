@@ -17,7 +17,7 @@
   <body>
     <!-- ===== Navbar(Header) ===== -->
     <div class="">
-      <header class="container">
+      <header id="header" class="container">
         <div class="first-nav-component">
           <ul
             class="d-flex justify-content-center align-items-center nav nav-underline"
@@ -44,6 +44,7 @@
           style="margin-bottom: 70px"
         >
           <span
+            id="nav-span"
             class="fw-bold fs-5 navbar-brand"
             style="text-decoration: underline; text-underline-offset: 10px"
             >Westbridge
@@ -54,7 +55,9 @@
             class="d-inline-flex gap-4 nav nav-underline header-navbar-component"
           >
             <li class="nav-item">
-              <a class="nav-link active" href="#">Admission</a>
+              <a class="nav-link active" href="pages/admission.html"
+                >Admission</a
+              >
             </li>
             <li class="nav-item">
               <a class="top-nav-bar nav-link text-black" href="">Training</a>
@@ -81,9 +84,11 @@
 
           <!-- MOBILE DROPDOWN -->
           <div class="menu" id="menu">
-            <a href="#" class="text-dark navlink active">Admission</a>
-            <a href="#" class="text-dark">Traning</a>
-            <a href="#" class="text-dark">Resreach</a>
+            <a href="pages/admission.html" class="text-dark navlink active"
+              >Admission</a
+            >
+            <a href="#" class="text-dark">Training</a>
+            <a href="#" class="text-dark">Research</a>
             <a href="#" class="text-dark">Collaborations</a>
             <a href="#" class="text-dark">Campus Life</a>
           </div>
@@ -167,7 +172,7 @@
                 class="mb-4 fw-bold certificate-heading"
                 style="font-size: 60px; color: #0a1f29; width: 70%"
               >
-                <span class="text-danger">MORE</span> THEN JUST A CERTIFICATE
+                <span class="text-danger">MORE</span> THAN JUST A CERTIFICATE
               </h1>
               <p class="hero-para text-dark w-75" style="font-size: 17px">
                 Arrive a student, leave an expert and become unstoppable when

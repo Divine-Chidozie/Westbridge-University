@@ -226,12 +226,17 @@
     width: 100%;
     text-align: center !important;
   }
+
   .hero-heading,
   .hero-para {
-    width: 90%;
+    width: 90% !important;
   }
   .hero-heading {
     font-size: 19px !important;
+  }
+  .hero-sub-container h1 {
+    margin: 0 auto !important;
+    width: 100% !important;
   }
   .hero-para {
     font-size: 16px !important;
@@ -241,6 +246,9 @@
     padding: 4px 10px;
   }
 
+  .certificate-heading {
+    width: 100% !important;
+  }
   /* ***** Featured Programme Section ***** */
   .Featured-programmes-container {
     margin-top: 270px !important;

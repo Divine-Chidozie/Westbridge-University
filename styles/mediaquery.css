@@ -234,9 +234,14 @@
   .hero-heading {
     font-size: 19px !important;
   }
+  .hero-sub-container {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column;
+  }
   .hero-sub-container h1 {
     margin: 0 auto !important;
-    width: 100% !important;
 
     font-size: 33px !important;
   }

@@ -1,0 +1,55 @@
+/* ===== ADMISSION PAGE MEDIAQUERY ===== */
+
+@media screen and (max-width: 1200px) {
+  .scholarship-container h3 {
+    font-size: 30px !important;
+  }
+  .scholarship-container p {
+    font-size: 16px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero-container {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .hero-container-heading {
+    width: 100% !important;
+    font-size: 25px !important;
+  }
+  .hero-container p {
+    width: 100% !important;
+    text-align: justify !important;
+  }
+  .hero-container-btn {
+    flex-direction: column;
+  }
+  .admission-requirment-container {
+    width: 100% !important;
+    padding: 0px !important;
+  }
+  .undergraduate-heading-para {
+    text-align: center !important;
+  }
+  .undergraduate-heading-para h2 {
+    padding-top: 60px !important;
+  }
+  .international-requirement-para { 
+    width: 90% !important;
+  }
+  .international-student-para {
+    font-size: 14px !important;
+  }
+  .tuition-fee-first-para {
+    margin-bottom: -70px !important;
+    width: 100% !important;
+  }
+  .tuition-fee-para {
+    margin-bottom: -100px !important;
+  }
+  .closing-message-para {
+    width: 100% !important;
+  }
+}

@@ -9,6 +9,7 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="/styles/admission-media.css" />
     <title>Westbridge University - Admissions</title>
   </head>
   <body>
@@ -17,9 +18,9 @@
       <section>
         <div class="p-5" style="background-color: #0a1f29">
           <div
-            class="d-flex flex-column justify-content-center align-items-start"
+            class="d-flex flex-column justify-content-center align-items-start hero-container"
           >
-            <h1 class="mt-4 fs-2 mb-1 text-white">
+            <h1 class="mt-4 fs-2 mb-1 text-white hero-container-heading">
               <span class="text-danger">Admissions</span> at Westbridge
               University
             </h1>
@@ -30,7 +31,7 @@
               future
             </p>
           </div>
-          <div class="d-flex gap-2">
+          <div class="d-flex gap-2 hero-container-btn">
             <a
               href="#"
               id="Apply-now-btn"
@@ -74,9 +75,9 @@
       <!-- ===== Admission Requirements Section ===== -->
       <section>
         <!--  Undergraduate Requirements  -->
-        <div class="p-5">
+        <div class="p-5 admission-requirment-container">
           <div
-            class="d-flex flex-column justify-content-center align-items-center"
+            class="d-flex flex-column justify-content-center align-items-center undergraduate-heading-para"
           >
             <h2 class="fs-4 mb-1">Undergraduate Requirements</h2>
             <p style="font-size: 17px">
@@ -85,7 +86,7 @@
             </p>
           </div>
 
-          <ol class="border border-lg shadow-sm p-5">
+          <ol class="border border-lg shadow-sm p-5 application-container">
             <li>Completed application form</li>
             <li>
               Minimum of five credit passes in relevant subjects at
@@ -101,9 +102,9 @@
         </div>
 
         <!-- postgraduate requirements -->
-        <div class="p-5">
+        <div class="p-5 admission-requirment-container">
           <div
-            class="d-flex flex-column justify-content-center align-items-center"
+            class="d-flex flex-column justify-content-center align-items-center undergraduate-heading-para"
           >
             <h2 class="fs-4 mb-1">Postgraduate Requirements</h2>
             <p style="font-size: 17px">
@@ -131,12 +132,12 @@
         </div>
 
         <!-- international requirements -->
-        <div class="p-5">
+        <div class="p-5 admission-requirment-container">
           <div
-            class="d-flex flex-column justify-content-center align-items-center"
+            class="d-flex flex-column justify-content-center align-items-center undergraduate-heading-para"
           >
             <h2 class="fs-4 mb-1">International Students</h2>
-            <p style="font-size: 17px">
+            <p style="font-size: 17px" class="international-requirement-para">
               International applicants are welcome at Westbridge and must
               provide the following:
             </p>
@@ -150,7 +151,7 @@
             <li>Proof of financial support or sponsorship</li>
           </ul>
 
-          <p>
+          <p class="international-student-para">
             Our international office provides full guidance for
             <span class="fw-bold">travel</span>,
             <span class="fw-bold">immigration</span>, and
@@ -235,7 +236,7 @@
         <div class="p-5 text-white" style="background-color: #0a1f29">
           <div>
             <h2 class="mb-1 fs-3">Tuition Fees</h2>
-            <p class="w-75">
+            <p class="w-75 tuition-fee-first-para">
               Tuition fees vary depending on the program and faculty. A detailed
               breakdown is available in the prospectus and on the offical fees
               pages. Fees cover academic resources, library access, laboratory
@@ -245,14 +246,17 @@
 
           <div class="row g-2">
             <div class="col-md-6 p-3">
-              <div style="margin: 100px auto">
+              <div style="margin: 100px auto" class="scholarship-container">
                 <h3
                   class="text-white"
                   style="font-size: 50px; font-weight: 700; margin-bottom: 5px"
                 >
                   Scholar<span class="text-danger">ships</span>
                 </h3>
-                <p style="font-style: italic; font-size: 20px; width: 100%">
+                <p
+                  style="font-style: italic; font-size: 20px; width: 100%"
+                  class="tuition-fee-para"
+                >
                   Westbridge University offers a range of scholarships,
                   including:
                 </p>
@@ -356,7 +360,7 @@
       <!-- ===== Closing Message Section ===== -->
       <section>
         <div class="p-5 text-white" style="background-color: #0a1f29">
-          <p class="w-75">
+          <p class="w-75 closing-message-para">
             At Westbridge University, we believe every student has the potential
             to achieve greatness. Our admissions team is committed to guiding
             you every step of the way as you prepare to join our vibrant

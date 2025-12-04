@@ -132,3 +132,23 @@ header {
   background: white;
   color: rgb(168, 165, 165) !important;
 }
+
+.active-link {
+  color: #00bcd4 !important;
+  border-bottom: 2px solid #00bcd4;
+  padding-bottom: 3px;
+  transition: 0.3s ease;
+}
+/* 
+#menu {
+  transform: translateY(-20px);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#menu.show-menu {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+} */
